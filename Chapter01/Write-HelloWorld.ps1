@@ -18,16 +18,16 @@ function Write-HelloWord () {
     [cmdletbinding()]
     param (
         [string]$Identity
-     )
+    )
 
-        if (![string]::IsNullOrEmpty($Identity)){
-            $appendStr = " Hello $Identity!"
-        }
-        else {
-            $appendStr = ""
-        }
+    if (![string]::IsNullOrEmpty($Identity)) {
+        $appendStr = " Hello $Identity!"
+    }
+    else {
+        $appendStr = ""
+    }
 
-        Write-Host "Hello World!$appendStr"
+    Write-Host "Hello World!$appendStr"
 }
 
 # After the function was loaded, let's try to call the function without a parameter
