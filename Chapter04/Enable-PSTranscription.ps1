@@ -31,3 +31,5 @@ function Enable-PSTranscription {
     New-ItemProperty $registryPath -Name "EnableInvocationHeader" -PropertyType Dword -Value 1 -Force
     New-ItemProperty $registryPath -Name "OutputDirectory" -PropertyType String -Value $OutputDirectory -Force
 }
+
+Enable-PSTranscription -OutputDirectory "C:\tmp"
