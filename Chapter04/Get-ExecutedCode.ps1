@@ -57,52 +57,52 @@ function Get-ExecutedCode {
         [Boolean]$IsMultiPart
     )
 
-    $PSWinEventLog = @{ ProviderName="Microsoft-Windows-PowerShell"; Id = 4104 }
-    $PSCoreEventLog = @{ ProviderName="PowerShellCore"; Id = 4104 }
+    $PSWinEventLog = @{ ProviderName = "Microsoft-Windows-PowerShell"; Id = 4104 }
+    $PSCoreEventLog = @{ ProviderName = "PowerShellCore"; Id = 4104 }
 
-    $CodeEvents = Get-WinEvent -FilterHashtable $PSWinEventLog,$PSCoreEventLog | ForEach-Object {
+    $CodeEvents = Get-WinEvent -FilterHashtable $PSWinEventLog, $PSCoreEventLog | ForEach-Object {
         [PSCustomObject]@{
-            TimeCreated = $_.TimeCreated
-            ExecutedCode = $_.Properties[2].Value
-            UserId = $_.UserId
-            Level = $_.LevelDisplayName
-            Path = $_.Properties[4].Value
-            ProviderName = $_.ProviderName
+            TimeCreated   = $_.TimeCreated
+            ExecutedCode  = $_.Properties[2].Value
+            UserId        = $_.UserId
+            Level         = $_.LevelDisplayName
+            Path          = $_.Properties[4].Value
+            ProviderName  = $_.ProviderName
             ScriptblockId = $_.Properties[3].Value
             
             #Is code split into multiple log entries?
-            IsMultiPart = $_.Properties[1].Value -ne 1
-            CurrentPart = $_.Properties[0].Value
-            TotalParts = $_.Properties[1].Value
+            IsMultiPart   = $_.Properties[1].Value -ne 1
+            CurrentPart   = $_.Properties[0].Value
+            TotalParts    = $_.Properties[1].Value
         }
     }
 
     #Filter for Search Word
     if ($SearchWord) {
-        $CodeEvents = $CodeEvents | Where-Object { $_.ExecutedCode -match $SearchWord}
+        $CodeEvents = $CodeEvents | Where-Object { $_.ExecutedCode -match $SearchWord }
     }
 
     #Filter for User Id
     if ($UserId) {
-        $CodeEvents = $CodeEvents | Where-Object { $_.UserId -eq $UserId}
+        $CodeEvents = $CodeEvents | Where-Object { $_.UserId -eq $UserId }
     }
 
     #Filter for Level
     if ($Level) {
-        $CodeEvents = $CodeEvents | Where-Object { $_.Level -eq $Level}
+        $CodeEvents = $CodeEvents | Where-Object { $_.Level -eq $Level }
     }
 
     #Filter for Path
     if ($Path) {
-        $CodeEvents = $CodeEvents | Where-Object { $_.Path -like "$Path*"}
+        $CodeEvents = $CodeEvents | Where-Object { $_.Path -like "$Path*" }
     }
 
     #Filter if code was split into multiple event entries
     if ($IsMultiPart) {
-        $CodeEvents = $CodeEvents | Where-Object { $_.IsMultiPart -eq $true}
+        $CodeEvents = $CodeEvents | Where-Object { $_.IsMultiPart -eq $true }
     }
     else {
-        $CodeEvents = $CodeEvents | Where-Object { $_.IsMultiPart -eq $false}
+        $CodeEvents = $CodeEvents | Where-Object { $_.IsMultiPart -eq $false }
     }
 
     return $CodeEvents
