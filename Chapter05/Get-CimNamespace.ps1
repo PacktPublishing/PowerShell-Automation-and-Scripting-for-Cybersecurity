@@ -13,9 +13,9 @@ function Get-CimNamespace {
         If specified, the specified namespace is enumerated recursively.
 
         .EXAMPLE
-        Get-CimNamespace -Namespace 'Root/directory/ldap' -Recurse
+        Get-CimNamespace -Namespace 'Root\Microsoft\Windows' -Recurse
     
-        Recursively enumerates the 'Root/directory/ldap' (Active Directory) namespace.
+        Recursively enumerates the 'Root\Microsoft\Windows' namespace.
     #>
 
     [cmdletbinding()]
@@ -24,15 +24,12 @@ function Get-CimNamespace {
         [switch]$Recurse
     )
 
-    if ($Recurse.IsPresent) {
-        $RecurseSearch = $true
-    }
-
     Get-CimInstance -Namespace $Namespace -ClassName '__NAMESPACE' |
     ForEach-Object {
         Write-Host $("$Namespace\" + $_.Name)
-        If ($RecurseSearch) {
-            Get-CimNamespace $("$Namespace\" + $_.Name)
+        If ($Recurse) {
+            
+            Get-CimNamespace $("$Namespace\" + $_.Name) -Recurse
         }
     }
 
