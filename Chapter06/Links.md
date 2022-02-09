@@ -8,14 +8,14 @@
 - https://support.microsoft.com/en-us/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576
 - https://github.com/dafthack/DomainPasswordSpray
 - https://github.com/PowerShellMafia/PowerSploit/tree/master/Recon
-- xkcd.com
+- https://xkcd.com
 - https://xkcd.com/936/
 - https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-accounts
 - https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/security-identifiers-in-windows
 - https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/security-identifiers-in-windows
 - https://docs.microsoft.com/en-us/windows/win32/secauthz/well-known-sids
 - https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/get-acl
-- Set-Acl: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-acl
+- https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-acl
 - https://docs.microsoft.com/en-us/powershell/module/grouppolicy/
 - https://docs.microsoft.com/en-us/azure/active-directory-domain-services/concepts-forest-trust
 - https://adsecurity.org/?p=3719
@@ -27,9 +27,6 @@
 - https://docs.microsoft.com/en-us/powershell/scripting/dsc/overview/overview
 - https://docs.microsoft.com/en-us/azure/automation/automation-dsc-getting-started
 - https://docs.microsoft.com/en-us/powershell/scripting/dsc/quickstarts/gpo-quickstart
-
-
-
 
 ## Further Reading
 - Access rights
