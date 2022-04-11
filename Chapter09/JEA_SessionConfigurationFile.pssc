@@ -1,0 +1,32 @@
+@{
+
+# Version number of the schema used for this document
+SchemaVersion = '2.0.0.0'
+
+# ID used to uniquely identify this document
+GUID = '45e6275e-ca02-4d17-89be-216f74b6a52e'
+
+# Author of this document
+Author = 'Miriam Wiesner'
+
+# Description of the functionality provided by these settings
+# Description = ''
+
+# Session type defaults to apply for this session configuration. Can be 'RestrictedRemoteServer' (recommended), 'Empty', or 'Default'
+SessionType = 'Default'
+
+# Directory to place session transcripts for this session configuration
+# TranscriptDirectory = 'C:\Transcripts\'
+
+# Whether to run this session configuration as the machine's (virtual) administrator account
+# RunAsVirtualAccount = $true
+
+# Scripts to run when applied to a session
+# ScriptsToProcess = 'C:\ConfigData\InitScript1.ps1', 'C:\ConfigData\InitScript2.ps1'
+
+# User roles (security groups), and the role capabilities that should be applied to them when applied to a session
+# RoleDefinitions = @{ 'CONTOSO\SqlAdmins' = @{ RoleCapabilities = 'SqlAdministration' }; 'CONTOSO\SqlManaged' = @{ RoleCapabilityFiles = 'C:\RoleCapability\SqlManaged.psrc' }; 'CONTOSO\ServerMonitors' = @{ VisibleCmdlets = 'Get-Process' } } 
+
+}
+
+
