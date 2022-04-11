@@ -35,7 +35,7 @@ New-ModuleManifest -Path "$path\ServerOperator.psd1"
 $RoleCapParams = @{
     Path = "$rolePath\ServerOperator-RoleCapability.psrc"
     Author = 'Miriam Wiesner'
-    CompanyName = 'Microsoft'
+    CompanyName = 'PSSEC'
     VisibleCmdlets = 'Restart-Service', 'Get-ADUser'
     VisibleFunctions = 'TabExpansion2'
 }
