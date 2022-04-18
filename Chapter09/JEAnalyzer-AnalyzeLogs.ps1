@@ -1,5 +1,5 @@
 ﻿#########################################################
-# This is a script to demonstrate how JEAnalyzer parses scripts
+# This is a script to demonstrate how JEAnalyzer parses commands from audit events
 #
 # Author: Miriam Wiesner
 #
