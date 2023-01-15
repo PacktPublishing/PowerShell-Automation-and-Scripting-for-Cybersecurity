@@ -74,7 +74,7 @@ $RemoteHosts | ForEach-Object {
             Write-Output "There are no applicable updates on $(hostname)." 
             return $null 
         } 
-        Write-Output "List of applicable items on the machine when using wssuscan.cab: `r`n" 
+        Write-Output "List of applicable items on the machine when using wsusscn2.cab: `r`n" 
         $i = 0 
         foreach ($Update in $Updates) {  
             Write-Output "$($i)> $($Update.Title)" 
