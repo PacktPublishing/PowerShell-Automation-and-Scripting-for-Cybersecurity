@@ -19,12 +19,12 @@ This script scans one or more (local or remote) host(s) to see if Windows update
 Specify one or more remote hosts. If this parameter is not specified, the localhost will be scanned.
 
 .PARAMETER CabPath
-You can use this parameter to specify where the wsusscn2.cab file should be downloaded to.
+You can use this parameter to specify where the wsusscn2.cab file should be downloaded to. If nothing is specified, it will be downloaded to $env:temp\wsusscn2.cab.
 
 .PARAMETER Force
 If the Force parameter is specified, the wsusscn2.cab file will be deleted if present and a new version will be downloaded.
 
-.PARAMETER RemoteHosts
+.PARAMETER DoNotDeleteCabFile
 If specified, the wsusscn2.cab file will not be deleted after the scan.
 
 .EXAMPLE
