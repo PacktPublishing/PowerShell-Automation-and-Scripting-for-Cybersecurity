@@ -1,0 +1,33 @@
+# Helpful links used in Chapter 02
+- System Namespace: https://learn.microsoft.com/en-us/dotnet/api/system
+- System.Management.Automation Namespace: https://learn.microsoft.com/en-us/dotnet/api/system.management.automation
+- about_Automatic_Variables: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables
+- about_Environment_Variables: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables
+- about_Scopes: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_scopes
+- about_Operators: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators
+- about_Comparison_Operators: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators
+- about_Assignment_Operators: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_assignment_operators
+- ForEach-Object: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/foreach-object
+- about_Break: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_break
+- Approved Verbs for PowerShell Commands: https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands
+- Strongly Encouraged Development Guidelines: https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/strongly-encouraged-development-guidelines
+- Cmdlet Overview: https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-overview
+- Windows PowerShell Cmdlet Concepts: https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/windows-powershell-cmdlet-concepts
+- about_Functions_CmdletBindingAttribute: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions_cmdletbindingattribute
+- PowerShell Basics for Security Professionals Part 6 – Pipeline by Carlos Perez: https://youtube.com/watch?v=P3ST3lat9bs
+- About Pipelines: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines
+- about_Aliases: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_aliases
+- PowerShell Gallery: https://www.powershellgallery.com/
+- Writing a Windows PowerShell Module: https://docs.microsoft.com/en-us/powershell/scripting/developer/module/writing-a-windows-powershell-module
+- PowerShell Framework: https://psframework.org/documentation/documents/psmoduledevelopment.html
+
+## Further Reading
+- Everything you want to know about arrays: https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-arrays
+- Everything you want to know about hashtables: https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-hashtable
+- Everything you want to know about $null: https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-null
+- Everything you want to know about PSCustomObject: https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-pscustomobject
+- About functions: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions
+- Functions 101: https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/09-functions
+- About functions’ advanced parameters: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters
+- Cmdlets versus functions: https://www.leeholmes.com/blog/2007/07/24/cmdlets-vs-functions/
+- Modules help pages: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_modules
