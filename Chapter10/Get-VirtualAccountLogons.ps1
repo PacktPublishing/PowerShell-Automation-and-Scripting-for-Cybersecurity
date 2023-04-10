@@ -1,7 +1,7 @@
 ﻿<#
 .SYNOPSIS
     Retrieves information about virtual account logons using CIM.
-    
+
 .DESCRIPTION
     This script retrieves information about virtual account logons on the local system using CIM. It queries the Win32_LoggedOnUser and Win32_LogonSession classes to retrieve the logon information and maps the logon type numbers to their corresponding names using a hashtable.
 
@@ -27,7 +27,7 @@ $LogonType = @{
     "11"="CachedInteractive"
 }
 
-$LoggedOnUsers = Get-CimInstance -ClassName Win32_LoggedOnUser | Where-Object { $_.Antecedent -like "*WinRM*"}
+$LoggedOnUsers = Get-CimInstance -ClassName Win32_LoggedOnUser | Where-Object { $_.Antecedent -like "*WinRM VA*"}
 $VirtualAccountLogons = $LoggedOnUsers.ForEach({
 
     $LogonSession = Get-CimInstance -ClassName Win32_LogonSession -Filter "LogonId = $($_.Dependent.LogonId)"
