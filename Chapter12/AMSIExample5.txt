@@ -1,0 +1,7 @@
+$string = "SyJnMnUiZjJ6JnF5IXYz"
+$key = 0x12
+
+$bytes = [System.Convert]::FromBase64String($string)
+$output = -join ($bytes | ForEach-Object { [char] ($_ -bxor $key)})
+
+Write-Host $output
