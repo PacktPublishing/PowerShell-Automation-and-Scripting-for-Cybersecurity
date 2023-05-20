@@ -24,6 +24,7 @@ namespace RunPoSh
                             totalArgs += " " + args[argCnt];
                         }
                     }
+                    totalArgs += " | Out-String";
                     PoSh.AddScript(totalArgs);
                     Collection<PSObject> PSOutput;
                     PSOutput = PoSh.Invoke();
