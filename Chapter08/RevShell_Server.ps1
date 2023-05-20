@@ -6,6 +6,7 @@ $client = $listener.AcceptTcpClient()
 $stream = $client.GetStream()
 $bytes = [System.Text.Encoding]::ASCII.GetBytes("Write-Host 'Hello world!'")
 $stream.Write($bytes, 0, $bytes.Length)
+$stream.Flush()
 
 # Close the connection
 $client.Close()
