@@ -1,0 +1,10 @@
+<xml>
+    <node1>
+        <HelloWorld>
+            Write-Host "Hello World!"
+        </HelloWorld>
+    </node1>
+    <othernode>
+        Write-Host "This is another node"
+    </othernode>
+</xml>
