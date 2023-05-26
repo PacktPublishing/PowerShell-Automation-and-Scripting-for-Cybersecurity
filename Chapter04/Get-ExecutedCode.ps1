@@ -67,7 +67,7 @@ function Get-ExecutedCode {
     $oldScriptBlockId = ""
     
     # All Multipart Events
-    $CodeEvents = $AllEvents | Where-Object { $_.IsMultiPart } | foreach {
+    $CodeEvents = @($AllEvents | Where-Object { $_.IsMultiPart } | foreach {
         # Only merge the code if it's a new ScriptBlock
         if ($oldScriptBlockId -ne $_.ScriptblockId) {
             $ScriptBlockCode = $_.ExecutedCode
@@ -88,21 +88,22 @@ function Get-ExecutedCode {
                 ScriptblockId = $_.ScriptblockId
             }
         }
-    }
+    })
+    
     
     # All Regular Events
-    $CodeEvents += $AllEvents | Where-Object { !( $_.IsMultiPart) } | foreach {
+    $CodeEvents += @($AllEvents | Where-Object { !( $_.IsMultiPart) } | foreach {
         # just add every event
         [PSCustomObject]@{
             TimeCreated   = $_.TimeCreated
-            ExecutedCode  = $ScriptBlockCode
+            ExecutedCode  = $_.ExecutedCode
             UserId        = $_.UserId
             Level         = $_.Level
             Path          = $_.Path
             ProviderName  = $_.ProviderName
             ScriptblockId = $_.ScriptblockId
         }
-    }
+    })
     
     $CodeEvents = $CodeEvents | Sort-Object TimeCreated 
     
