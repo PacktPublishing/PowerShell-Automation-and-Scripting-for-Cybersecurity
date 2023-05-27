@@ -1,16 +1,16 @@
-function Assert-OuACLSecurity {
+function Get-OuACLSecurity {
     <#
         .SYNOPSIS
         This function enumerates all OU ACLs and displays access rights.
 
         .DESCRIPTION
-        This function enumerates all OU ACLs and displays access rights.
+        This function enumerates all OU ACLs and displays access rights. Requires the ActiveDirectory module.
 
         .NOTES
         AUTHOR: Miriam Wiesner, @miriamxyra
 
         .EXAMPLE
-        Assert-OuACLSecurity
+        Get-OuACLSecurity
 
         Displays all OU ACLs and their access rights.
     #>
@@ -34,4 +34,4 @@ function Assert-OuACLSecurity {
     }
     return $OuAcls
 }
-Assert-OuACLSecurity
+Get-OuACLSecurity

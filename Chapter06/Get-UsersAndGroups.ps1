@@ -1,16 +1,16 @@
-function Assert-UsersAndGroups {
+function Get-UsersAndGroups {
     <#
         .SYNOPSIS
         This function enumerates all AD groups that can be accessed and displays group membership.
 
         .DESCRIPTION
-        This function enumerates all AD groups that can be accessed and displays group membership.
+        This function enumerates all AD groups that can be accessed and displays group membership. Requires the ActiveDirectory module.
 
         .NOTES
         AUTHOR: Miriam Wiesner, @miriamxyra
 
         .EXAMPLE
-        Assert-UsersAndGroups
+        Get-UsersAndGroups
 
         Displays all AD groups that can be accessed and group membership.
     #>
@@ -30,4 +30,4 @@ function Assert-UsersAndGroups {
     }
     $ADGroups
 }
-Assert-UsersAndGroups
+Get-UsersAndGroups

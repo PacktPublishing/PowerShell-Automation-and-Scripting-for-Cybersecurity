@@ -1,4 +1,4 @@
-function Assert-LocalUsersAndGroups {
+function Get-LocalUsersAndGroups {
     <#
         .SYNOPSIS
         This function enumerates all local users and groups that can be accessed and displays group membership.
@@ -10,7 +10,7 @@ function Assert-LocalUsersAndGroups {
         AUTHOR: Miriam Wiesner, @miriamxyra
 
         .EXAMPLE
-        Assert-UsersAndGroups
+        Get-UsersAndGroups
 
         Displays all local users and groups that can be accessed and group membership.
     #>
@@ -28,4 +28,4 @@ function Assert-LocalUsersAndGroups {
     }
     $LocalGroups
 }
-Assert-LocalUsersAndGroups
+Get-LocalUsersAndGroups

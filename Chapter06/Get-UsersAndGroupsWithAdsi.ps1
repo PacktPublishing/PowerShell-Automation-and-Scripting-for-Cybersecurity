@@ -1,4 +1,4 @@
-function Assert-UsersAndGroupsWithAdsi {
+function Get-UsersAndGroupsWithAdsi {
     <#
         .SYNOPSIS
         This function enumerates all AD groups using adsisearcher that can be accessed and displays group membership.
@@ -7,7 +7,7 @@ function Assert-UsersAndGroupsWithAdsi {
         .NOTES
         AUTHOR: Miriam Wiesner, @miriamxyra
         .EXAMPLE
-        Assert-UsersAndGroups
+        Get-UsersAndGroups
         Displays all AD groups using adsisearcher that can be accessed and group membership.
     #>
     $ADGroups = ([adsisearcher]"(objectClass=group)").FindAll() | ForEach-Object {
@@ -33,4 +33,4 @@ function Assert-UsersAndGroupsWithAdsi {
     }
     $ADGroups
 }
-Assert-UsersAndGroups
+Get-UsersAndGroupsWithAdsi
