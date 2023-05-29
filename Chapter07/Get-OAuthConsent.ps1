@@ -14,8 +14,8 @@ AUTHOR: Miriam Wiesner, @miriamxyra
 
 .EXAMPLE
 PS C:> Get-OAuthConsent
-This example retrieves information about OAuth 2.0 Consent in Azure Active Directory and displays a list of service principals that have an admin consent description,
-including their display name, description, enabled status, ID, and application owner tenant ID.
+This example retrieves information about OAuth 2.0 Consent in Azure Active Directory and displays a list of service principals that have an admin consent
+description, including their display name, description, enabled status, ID, and application owner tenant ID.
 #>
     
     
