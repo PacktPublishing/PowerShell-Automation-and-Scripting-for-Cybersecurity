@@ -13,21 +13,10 @@ namespace RunPoSh
                 if (args.Length >= 1)
                 {
                     String totalArgs = "";
-                    for (int argCnt = 0; argCnt < args.Length; argCnt++)
-                    {
-                        if (totalArgs=="")
-                        {
-                            totalArgs += args[argCnt];
-                        }
-                        else
-                        {
-                            totalArgs += " " + args[argCnt];
-                        }
-                    }
+                    totalArgs = string.Join(" ", args);
                     totalArgs += " | Out-String";
                     PoSh.AddScript(totalArgs);
-                    Collection<PSObject> PSOutput;
-                    PSOutput = PoSh.Invoke();
+                    Collection<PSObject> PSOutput = PoSh.Invoke();
                     foreach (PSObject outputItem in PSOutput)
                     {
                         if (outputItem != null)
