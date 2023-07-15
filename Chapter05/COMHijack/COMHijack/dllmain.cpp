@@ -1,14 +1,25 @@
 #include "pch.h"
 #include <string>
 
-DWORD WINAPI CallCalculator(LPVOID lpParam) {
+DWORD WINAPI CallCalculator() {
     STARTUPINFO info = { 0 };
-    PROCESS_INFORMATION processInfo;
-    std::wstring cmd = L"C:\\Windows\\System32\\calc.exe";
-    BOOL hR = CreateProcess((LPWSTR)cmd.c_str(), NULL, NULL, NULL, TRUE, 0, NULL, NULL, &info, &processInfo);
-    if (hR == 0) {
+    PROCESS_INFORMATION processInfo = { 0 };
+
+    wchar_t windowsDir[MAX_PATH];
+    if (GetWindowsDirectory(windowsDir, MAX_PATH) == 0) {
         return 1;
     }
+    std::wstring cmd = std::wstring(windowsDir) + L"\\System32\\calc.exe";
+
+    info.cb = sizeof(info);
+    BOOL ProcessLaunched = CreateProcess((LPWSTR)cmd.c_str(), NULL, NULL, NULL, TRUE, 0, NULL, NULL, &info, &processInfo);
+    if (ProcessLaunched == FALSE) {
+        return 1;
+    }
+
+    CloseHandle(processInfo.hProcess);
+    CloseHandle(processInfo.hThread);
+
     return 0;
 }
 
@@ -17,17 +28,6 @@ BOOL APIENTRY DllMain(HMODULE hModule,
     LPVOID lpReserved
 )
 {
-    switch (ul_reason_for_call)
-    {
-    case DLL_PROCESS_ATTACH:
-    {
-        CallCalculator(NULL);
-        break;
-    }
-    case DLL_THREAD_ATTACH:
-    case DLL_THREAD_DETACH:
-    case DLL_PROCESS_DETACH:
-        break;
-    }
+    if (DLL_PROCESS_ATTACH == ul_reason_for_call) { CallCalculator(); }
     return TRUE;
 }
