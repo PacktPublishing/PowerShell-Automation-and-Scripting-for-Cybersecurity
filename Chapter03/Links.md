@@ -25,7 +25,7 @@
 - Enterprise access model: https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-access-model (Originally: https://docs.microsoft.com/en-us/security/compass/privilegedaccess-access-model)
 
 ## Further Reading
-- Authentication:
+## Authentication:
   - RFC 2617 – HTTP authentication (Basic & Digest authentication): https://tools.ietf.org/html/rfc2617
   - Credential Security Support Provider (CredSSP) Protocol:
     -    https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-cssp/85f57821-40bb-46aa-bfcb-ba9590b8fc30
@@ -33,16 +33,16 @@
   - Public Key Authentication 
     - https://en.wikipedia.org/wiki/Public-key_cryptography
     - https://www.ssh.com/ssh/public-key-authentication
-- CIM:
+## CIM:
   - CIM Cmdlets: https://devblogs.microsoft.com/powershell/introduction-to-CIM cmdlets/
   - CIM standard by DMTF: https://www.dmtf.org/standards/cim
-- DCOM:
+## DCOM:
   - Distributed Component Object Model (DCOM) Remote Protocol: https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-dcom/4a893f3d-bd29-48cd-9f43-d9777a4415b0
-- OMI:
+## OMI:
   - Open Management Infrastructure: https://cloudblogs.microsoft.com/windowsserver/2012/06/28/open-management-infrastructure/
-- Other useful resources:
+## Other useful resources:
   - New-NetFirewallRule: https://learn.microsoft.com/en-us/powershell/module/netsecurity/new-netfirewallrule
-- PowerShell Remoting:
+## PowerShell Remoting:
   - [MS-PSRP]: PowerShell Remoting Protocol: https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-psrp/602ee78e-9a19-45ad-90fa-bb132b7cecec
   - Running Remote Commands: https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/running-remote-commands
   - WS-Man Remoting in PowerShell Core: https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/wsman-remoting-in-powershell-core
@@ -51,12 +51,12 @@
   - PowerShell endpoints: https://devblogs.microsoft.com/scripting/introduction-to-powershell-endpoints/
   - PowerShell remoting over SSH: https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core
   - The second hop: https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ps-remoting-second-hop
-- WMI:
+## WMI:
   - Get-WmiObject: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-wmiobject
   - Invoke-WmiMethod: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/invoke-wmimethod
   - Register-WmiEvent: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/register-wmievent
   - Remove-WmiObject: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/remove-wmiobject
   - Set-WmiInstance: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/set-wmiinstance
-- WS-MAN:
+## WS-MAN:
   - WS-MAN standard by DMTF: https://www.dmtf.org/standards/ws-man
   - WS-Management (WSMan) Remoting in PowerShell Core: https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/wsman-remoting-in-powershell-core

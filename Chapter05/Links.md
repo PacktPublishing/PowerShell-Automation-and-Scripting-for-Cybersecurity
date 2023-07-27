@@ -19,12 +19,12 @@
 
 
 ## Further Reading
-- API:
+## API:
   - Low-Level Windows API Access From PowerShell: https://www.fuzzysecurity.com/tutorials/24.html
-- CIM/WMI:
+## CIM/WMI:
   - Use PowerShell to Manipulate Information with CIM: https://devblogs.microsoft.
 com/scripting/use-powershell-to-manipulate-information-with-cim/
-- COM hijacking:
+## COM hijacking:
   - Demystifying Windows Component Object Model (COM): https://www.221bluestreet.com/- fensive-security/windows-components-object-model/- mystifying-windows-component-object-model-com
   - acCOMplice: https://github.com/nccgroup/acCOMplice
   - COM Hijacking Techniques, David Tulis (DerbyCon): https://www.youtube.com/watch?- pH14BvUiTLY
@@ -35,11 +35,11 @@ com/scripting/use-powershell-to-manipulate-information-with-cim/
   - IUnknown::QueryInterface(REFIID,void**) method (unknwn.h): https://learn.microsoft.com/  -n-us/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(refiid_void)
   - IUnknown interface (unknwn.h): https://learn.microsoft.com/en-us/windows/win32/api/unknwn/  -n-unknwn-iunknown
   - IUnknown::QueryInterface(Q**) method (unknwn.h): https://learn.microsoft.com/en-us/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)
-- .NET Framework:
+## .NET Framework:
   - Assemblies in .NET: https://learn.microsoft.com/en-us/dotnet/standard/assembly/
   - Global Assembly Cache: https://learn.microsoft.com/en-us/dotnet/framework/app-domains/gac
   - .NET Framework versions and dependencies: https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies
-- Running PowerShell without powershell.exe:
+## Running PowerShell without powershell.exe:
   - NoPowerShell: https://github.com/bitsadmin/nopowershell
   - PowerLessShell: https://github.com/Mr-Un1k0d3r/PowerLessShell
   - p0wnedShell: https://github.com/Cn33liz/p0wnedShell
