@@ -21,6 +21,8 @@
 - AuthenticationMechanism Enum: https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.runspaces.authenticationmechanism
 - Mitigating Pass-the-Hash (PtH) Attacks and Other Credential Theft, Version 1 and 2: https://www.microsoft.com/en-us/download/details.aspx?id=36036
 - Invoke-Command: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/invoke-command
+- Clean source principle: https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-success-criteria#clean-source-principle (Originally: https://docs.microsoft.com/en-us/security/compass/privilegedaccess-success-criteria#clean-source-principle)
+- Enterprise access model: https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-access-model (Originally: https://docs.microsoft.com/en-us/security/compass/privilegedaccess-access-model)
 
 ## Further Reading
 - Authentication:

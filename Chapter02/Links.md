@@ -4,9 +4,9 @@
 - about_Automatic_Variables: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables
 - about_Environment_Variables: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables
 - about_Scopes: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_scopes
-- about_Operators: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators
 - about_Comparison_Operators: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators
 - about_Assignment_Operators: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_assignment_operators
+- about_Operators: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators
 - ForEach-Object: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/foreach-object
 - about_Break: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_break
 - Approved Verbs for PowerShell Commands: https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands

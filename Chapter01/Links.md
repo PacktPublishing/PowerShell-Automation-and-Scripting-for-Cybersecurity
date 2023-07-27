@@ -22,4 +22,4 @@
 - Installing PowerShell on ARM: https://docs.microsoft.com/en-us/powershell/scripting/install/powershell-core-on-arm
 - Using PowerShell in Docker: https://docs.microsoft.com/en-us/powershell/scripting/install/powershell-in-docker
 - PowerShell ♥ the Blue Team: https://devblogs.microsoft.com/powershell/powershell-the-blue-team/.
-- Using Visual Studio Code: https://docs.microsoft.com/en-us/powershell/scripting/dev-cross-plat/vscode/using-vscode
+- Using Visual Studio Code for PowerShell Development: https://docs.microsoft.com/en-us/powershell/scripting/dev-cross-plat/vscode/using-vscode
