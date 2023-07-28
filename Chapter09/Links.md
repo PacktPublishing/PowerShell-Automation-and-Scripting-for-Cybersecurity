@@ -1,0 +1,34 @@
+# Helpful links used in Chapter 09
+- NIST Cybersecurity Framework (NIST CSF) guidelines: https://www.nist.gov/cyberframework/framework
+- PSGumshoe: https://github.com/PSGumshoe/PSGumshoe
+- PowerShellArsenal: https://github.com/mattifestation/PowerShellArsenal
+- AtomicTestHarnesses: https://github.com/redcanaryco/AtomicTestHarnesses
+- PowerForensics: https://github.com/Invoke-IR/PowerForensics
+- NtObjectManager and the sandbox attacksurface analysis tools: https://github.com/googleprojectzero/sandbox-attacksurface-analysis-tools
+- DSInternals: https://github.com/MichaelGrafnetter/DSInternals
+- PSScriptAnalyzer: https://github.com/PowerShell/PSScriptAnalyzer
+- InjectionHunter: https://www.powershellgallery.com/packages/InjectionHunter/1.0.0
+- PowerShell Injection Hunter: Security Auditing for PowerShell Scripts: https://devblogs.microsoft.com/powershell/powershell-injection-hunter-security-auditing-for-powershell-scripts/
+- Revoke-Obfuscation: https://github.com/danielbohannon/Revoke-Obfuscation
+- VirusTotal: https://www.virustotal.com
+- Posh-VirusTotal: https://github.com/darkoperator/Posh-VirusTotal
+- PoshVTInstall.ps1: https://gist.githubusercontent.com/darkoperator/9138373/raw/22fb97c07a21139a398c2a3d6ca7e3e710e476bc/PoshVTInstall.ps1
+- EventList: https://github.com/miriamxyra/EventList
+- JEAnalyzer: https://github.com/PSSecTools/JEAnalyzer
+- Sysmon: https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
+- PowerShell ♥ the Blue Team: https://devblogs.microsoft.com/powershell/powershell-the-blue-team/
+- Detecting and Preventing PowerShell Downgrade Attacks: https://www.leeholmes.com/detecting-and-preventing-powershell-downgrade-attacks/
+
+# Further Reading
+- Blue Team Notes: https://github.com/Purp1eW0lf/Blue-Team-Notes
+- Blue Team Tips: https://sneakymonkey.net/blue-team-tips/
+- A collection of PowerShell functions and scripts a blue teamer might use: https://github.com/tobor88/PowerShell-Blue-Team
+- Creating and Starting a Windows Service Remotely Using NtObjectManager Via Remote Procedure Calls (RPC) Over SMB: https://blog.openthreatresearch.com/ntobjectmanager_rpc_smb_scm
+- Detecting and Preventing PowerShell Downgrade Attacks: https://www.leeholmes.com/detecting-and-preventing-powershell-downgrade-attacks/
+- Directory Services Internals Blog: https://www.dsinternals.com/en/
+- Investigating PowerShell Attacks: https://www.fireeye.com/content/dam/fireeye-www/global/en/solutions/pdfs/wp-lazanciyan-investigating-powershell-attacks.pdf
+- PowerForensics - PowerShell Digital Forensics: https://powerforensics.readthedocs.io/en/latest/
+- PowerShell ♥ the Blue Team: https://devblogs.microsoft.com/powershell/powershell-the-blue-team/
+- Testing adversary technique variations with AtomicTestHarnesses: https://redcanary.com/blog/introducing-atomictestharnesses/
+- Tracking WMI Activity with PSGumshoe: https://www.darkoperator.com/blog/2022/3/27/tracking-wmi-activity-with-psgumshoe
+- Windows Sandbox Attack Surface Analysis: https://googleprojectzero.blogspot.com/2015/11/windows-sandbox-attack-surface-analysis.html
