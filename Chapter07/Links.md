@@ -23,10 +23,8 @@
 - BloodHound/AzureHound: https://github.com/BloodHoundAD/BloodHound / https://github.com/BloodHoundAD/AzureHound
 - msmailprobe: https://github.com/busterb/msmailprobe
 - o365creeper: https://github.com/LMGsec/o365creeper
-- office365userenum: https://bitbucket.org/grimhacker/office365userenum/
-src
-- o365recon: https://github.com/nyxgeek/o365recon/blob/master/
-o365recon.ps1
+- office365userenum: https://bitbucket.org/grimhacker/office365userenum/src
+- o365recon: https://github.com/nyxgeek/o365recon/blob/master/o365recon.ps1
 - ROADtools: https://github.com/dirkjanm/ROADtools
 - Stormspotter: https://github.com/Azure/Stormspotter
 - Azure Storage: https://storage.azure.com
