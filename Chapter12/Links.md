@@ -8,7 +8,7 @@
 - AMSI.fail: https://amsi.fail/
 - Bypass AMSI by manual modification: https://s3cur3th1ssh1t.github.io/Bypass_AMSI_by_manual_modification/
 
-## Further Reading
+# Further Reading
 - IAntimalwareProvider interface (amsi.h): https://learn.microsoft.com/en-us/windows/win32/api/amsi/nn-amsi-iantimalwareprovider
 - AMSI for the Developer audience, and sample code: https://learn.microsoft.com/en-us/windows/win32/amsi/dev-audience
 - Better know a data source: Antimalware Scan Interface: https://redcanary.com/blog/amsi/
