@@ -24,7 +24,7 @@
 - Clean source principle: https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-success-criteria#clean-source-principle (Originally: https://docs.microsoft.com/en-us/security/compass/privilegedaccess-success-criteria#clean-source-principle)
 - Enterprise access model: https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-access-model (Originally: https://docs.microsoft.com/en-us/security/compass/privilegedaccess-access-model)
 
-## Further Reading
+# Further Reading
 ## Authentication:
   - RFC 2617 – HTTP authentication (Basic & Digest authentication): https://tools.ietf.org/html/rfc2617
   - Credential Security Support Provider (CredSSP) Protocol:

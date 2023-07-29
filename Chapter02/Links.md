@@ -21,7 +21,7 @@
 - Writing a Windows PowerShell Module: https://docs.microsoft.com/en-us/powershell/scripting/developer/module/writing-a-windows-powershell-module
 - PowerShell Framework: https://psframework.org/documentation/documents/psmoduledevelopment.html
 
-## Further Reading
+# Further Reading
 - Everything you want to know about arrays: https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-arrays
 - Everything you want to know about hashtables: https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-hashtable
 - Everything you want to know about $null: https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-null
