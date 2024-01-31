@@ -14,7 +14,7 @@ function Get-UsersAndGroupsWithAdsi {
         $groupName = $_.Properties.samaccountname
         $distinguishedNames = $_.properties.member
 
-        if (!([string]::IsNullOrEmpty($distinguishedName))) {
+        if (!([string]::IsNullOrEmpty($distinguishedNames))) {
             foreach($distinguishedName in $distinguishedNames) {
                 ([adsisearcher]"(distinguishedName=$distinguishedName)").FindAll()| ForEach-Object {
                     [PSCustomObject]@{
